@@ -7,17 +7,61 @@
 //
 
 #import "ViewController.h"
+#import "Person.h"
+#import <objc/runtime.h>
+#import <objc/message.h>
+
+
+
+typedef struct objc_myClass{
+
+    char* name;
+    float version;
+} *myClass;
+
+typedef struct objc_myObeject{
+    
+    myClass  isa;
+    
+} *myObject;
+
 
 @interface ViewController ()
+
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    //myClass  a;
+    //a -> name = "carousel";
+    //myObject b;
+    //b -> isa -> name = "something";
+    
+    Person* p = [[Person alloc] initWithName:@"Carousel" age:28];
+    
+    [p performSelector:@selector(unexistMethod)];
+    
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 - (void)didReceiveMemoryWarning {

@@ -1,0 +1,18 @@
+//
+//  Child.h
+//  Runtime
+//
+//  Created by Carouesl on 2016/11/4.
+//  Copyright © 2016年 Carouesl. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface Child : NSObject
+
+@property (nonatomic, strong) NSString* name;
+@property (nonatomic, assign) NSInteger age;
+
+-(instancetype)initWithName:(NSString* )name  age:(NSInteger) age;
+
+@end

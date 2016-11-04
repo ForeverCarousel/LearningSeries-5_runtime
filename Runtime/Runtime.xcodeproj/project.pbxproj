@@ -13,6 +13,10 @@
 		BA2DE4C01DC890DF0055D3B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2DE4BE1DC890DF0055D3B4 /* Main.storyboard */; };
 		BA2DE4C21DC890DF0055D3B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2DE4C11DC890DF0055D3B4 /* Assets.xcassets */; };
 		BA2DE4C51DC890DF0055D3B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2DE4C31DC890DF0055D3B4 /* LaunchScreen.storyboard */; };
+		BA7E7D0D1DCC3122005669A7 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7E7D0C1DCC3122005669A7 /* Person.m */; };
+		BA7E7D101DCC3181005669A7 /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7E7D0F1DCC3181005669A7 /* Child.m */; };
+		BA7E7D131DCC7D26005669A7 /* UnrecogizeMethodManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7E7D121DCC7D26005669A7 /* UnrecogizeMethodManager.m */; };
+		BA7E7D151DCC8500005669A7 /* messageForwarding.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7E7D141DCC8500005669A7 /* messageForwarding.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		BA2DE4C11DC890DF0055D3B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA2DE4C41DC890DF0055D3B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA2DE4C61DC890DF0055D3B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA7E7D0B1DCC3122005669A7 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		BA7E7D0C1DCC3122005669A7 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		BA7E7D0E1DCC3181005669A7 /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Child.h; sourceTree = "<group>"; };
+		BA7E7D0F1DCC3181005669A7 /* Child.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Child.m; sourceTree = "<group>"; };
+		BA7E7D111DCC7D26005669A7 /* UnrecogizeMethodManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnrecogizeMethodManager.h; sourceTree = "<group>"; };
+		BA7E7D121DCC7D26005669A7 /* UnrecogizeMethodManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnrecogizeMethodManager.m; sourceTree = "<group>"; };
+		BA7E7D141DCC8500005669A7 /* messageForwarding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messageForwarding.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +73,15 @@
 				BA2DE4B91DC890DF0055D3B4 /* AppDelegate.m */,
 				BA2DE4BB1DC890DF0055D3B4 /* ViewController.h */,
 				BA2DE4BC1DC890DF0055D3B4 /* ViewController.m */,
-				BA2DE4BE1DC890DF0055D3B4 /* Main.storyboard */,
+				BA7E7D0B1DCC3122005669A7 /* Person.h */,
+				BA7E7D0C1DCC3122005669A7 /* Person.m */,
+				BA7E7D0E1DCC3181005669A7 /* Child.h */,
+				BA7E7D0F1DCC3181005669A7 /* Child.m */,
+				BA7E7D111DCC7D26005669A7 /* UnrecogizeMethodManager.h */,
+				BA7E7D121DCC7D26005669A7 /* UnrecogizeMethodManager.m */,
+				BA7E7D141DCC8500005669A7 /* messageForwarding.png */,
 				BA2DE4C11DC890DF0055D3B4 /* Assets.xcassets */,
+				BA2DE4BE1DC890DF0055D3B4 /* Main.storyboard */,
 				BA2DE4C31DC890DF0055D3B4 /* LaunchScreen.storyboard */,
 				BA2DE4C61DC890DF0055D3B4 /* Info.plist */,
 				BA2DE4B51DC890DF0055D3B4 /* Supporting Files */,
@@ -138,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA7E7D151DCC8500005669A7 /* messageForwarding.png in Resources */,
 				BA2DE4C51DC890DF0055D3B4 /* LaunchScreen.storyboard in Resources */,
 				BA2DE4C21DC890DF0055D3B4 /* Assets.xcassets in Resources */,
 				BA2DE4C01DC890DF0055D3B4 /* Main.storyboard in Resources */,
@@ -153,7 +172,10 @@
 			files = (
 				BA2DE4BD1DC890DF0055D3B4 /* ViewController.m in Sources */,
 				BA2DE4BA1DC890DF0055D3B4 /* AppDelegate.m in Sources */,
+				BA7E7D0D1DCC3122005669A7 /* Person.m in Sources */,
 				BA2DE4B71DC890DF0055D3B4 /* main.m in Sources */,
+				BA7E7D101DCC3181005669A7 /* Child.m in Sources */,
+				BA7E7D131DCC7D26005669A7 /* UnrecogizeMethodManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +334,7 @@
 				BA2DE4CB1DC890DF0055D3B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
