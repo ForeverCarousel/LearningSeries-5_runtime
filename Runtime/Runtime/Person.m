@@ -35,7 +35,7 @@
 
 
 
-//消息转发的处理过程见工程中 名字为  messageForwarding的图
+//消息转发的处理过程见工程中 名字为  messageForwarding的图片
 
 //基类的实例方法 当该类实例调用方法时 如果在method_list和superclass的method_list的列表中都找不到调用的方法时 会调用如下方法  可以进一步处理没有响应的方法
 +(BOOL)resolveInstanceMethod:(SEL)sel
@@ -47,7 +47,7 @@
         //为传递过来的消息添加实现体
         BOOL result = class_addMethod([self class], sel, (IMP)dynamicImplementation, "V@:");
         if (result) {
-            NSLog(@"添加新的方实现成功");
+            NSLog(@"添加新的方法实现成功");
         }
     }
     return [super resolveInstanceMethod:sel];
@@ -90,7 +90,7 @@ void dynamicImplementation (id self ,SEL _cmd){
 
 
 
-//如果上述方法返回nil 或者未实现 则进入下一步转发
+//如果上述方法返回nil 或者未实现 则进入下一步转发 完整的消息转发
 /*
     当一个对象由于没有相应的方法实现而无法相应某消息时，运行时系统将通过 forwardInvocation: 消息通知该对象。每个对象都继承了 forwardInvocation: 方法。但是， NSObject 中的方法实现只是简单的调用了 doesNotRecognizeSelector:。通过实现自己的 forwardInvocation: 方法，我们可以将消息转发给其他对象。
     forwardInvocation: 方法就是一个不能识别消息的分发中心，将这些不能识别的消息转发给不同的接收对象，或者转发给同一个对象，再或者将消息翻译成另外的消息，亦或者简单的“吃掉”某些消息，因此没有响应也不会报错。这一切都取决于方法的具体实现。
